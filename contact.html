@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css ">
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: gray;
+        }
+
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            border-radius: 80px;
+            border-style: solid 1px;
+            border-width: 5px;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a.active {
+            color: white;
+        }
+        .contact{
+            min-height: 100vh;
+            background-color: gray;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container h2{
+            font-size: 36px;
+            margin-bottom: 40ps;
+            color: #333;
+        }
+
+        .contact-wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .contact-form{
+            text-align: left;
+        }
+
+        .contact-form h3{
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group{
+            margin-bottom :20px;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        button{
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div> <img class="logo" src="./image/logo.png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="./home.html" class="active">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> <br>
+    <br>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Semd us a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="" placeholder="Your Name">
+                        </div><br>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div><br>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div><br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p> <i class="fa-solid fa-phone"></i> 9848234029</p>
+                    <p> <i class="fa-solid fa-envelope"></i> rijupaudel2078@gmail.com</p>
+                    <p> <i class="fa-solid fa-location-dot"></i> Bafal, Kathmandu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

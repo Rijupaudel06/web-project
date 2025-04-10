@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #55442d;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #55442d;
+        }
+
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            border-radius: 80px;
+            border-style: solid 1px;
+            border-width: 5px;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a.active {
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80vh;
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
+
+        .info {
+            width: 50%;
+        }
+
+        .profile-pic img {
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            justify-content: center;
+        }
+
+        .custom-table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-table th,
+        .custom-table td {
+            border: 1px solid #151212;
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        .custom-table thead {
+            background-color: #0c0606;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div> <img class="logo" src="./image/logo.png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="./home.html" class="active">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="info">
+                <h1>About me</h1>
+                <h2>My name is Riju Paudel</h2>
+                <p>I am a sutdent. I love building user-friendly websites. I started to do coding from my +2 level. I
+                    learned all this codeing through hard practice and doing some provided projects on figma also I
+                    learned it from youtube too. </p>
+
+
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Skills</th>
+                            <th>Hobbies</th>
+                            <th>Interest</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>HTML, CSS,</td>
+                        <td>Drawing</td>
+                        <td>Web design</td>
+                    </tr>
+                    <tr>
+                        <td> Git, Github</td>
+                        <td>Watching Dramas</td>
+                        <td>Coading</td>
+                    </tr>
+                </table>
+
+
+
+
+            </div>
+            <div class="profile-pic">
+                <img src="./image/images.jpeg" alt="Profile Picture">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
