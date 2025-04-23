@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css ">
     <style>
         body {
-            background-color:  #55442d;
+            background-color: white;
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -21,7 +21,15 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: #55442d;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #000;
+            overflow: hidden;
+            z-index: 1000;
+            /* Keeps it above other content */
+
         }
 
 
@@ -38,63 +46,95 @@
             list-style: none;
             display: flex;
             gap: 20px;
+            background-color: black;
+            overflow: hidden;
+
         }
 
         nav ul li a {
             color: white;
+            text-decoration: none;
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
             text-decoration: none;
         }
 
         nav ul li a.active {
             color: white;
         }
-        .contact{
+
+        nav ul li a:hover {
+            background-color: #ff0000;
+            /* Red on hover */
+            color: #fff;
+        }
+
+        .contact {
             min-height: 100vh;
-            background-color:  #55442d;
+            background-color: white;
             padding: 50px;
             text-align: center;
         }
 
-        .container{
+        @media (max-width: 400px)  {
+        .container {
+          flex-direction: column;
+        }
+    }
+        .container {
             max-width: 800px;
             margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+            height: 80vh;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top:100px;
+            margin: 0%;
+
         }
 
-        .container h2{
+        .container h2 {
             font-size: 36px;
             margin-bottom: 40ps;
-            color: #f1f1f1;
+            color: #020101;
         }
 
-        .contact-wrapper{
+        .contact-wrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .contact-form{
+        .contact-form {
             text-align: left;
         }
 
-        .contact-form h3{
+        .contact-form h3 {
             font-size: 24px;
             margin-bottom: 20px;
-            color: #fdfcfc;
+            color: #090909;
         }
 
-        .form-group{
-            margin-bottom :20px;
+        .form-group {
+            margin-bottom: 20px;
         }
-
-        input, textarea{
+        .contact-info{
+            color: black;
+        }
+        input,
+        textarea {
             width: 100%;
             padding: 12px;
             border-radius: 8px;
             border: none;
-            background-color: #f8f9fa;
-            color: #f9f6f6;
+            background-color: #01060c;
+            color: #050101;
         }
 
-        button{
+        button {
             display: inline-block;
             padding: 12px 24px;
             background-color: #4caf50;
@@ -103,17 +143,16 @@
             cursor: pointer;
             border-radius: 10%;
         }
-        button:hover{
+
+        button:hover {
             background-color: #9adb9d;
         }
-
-        
     </style>
 </head>
 
 <body>
     <header>
-        <div> <a href="./index.html"><img class="logo" src="./image/logo.png" alt="" ></a></div>
+        <div> <a href="./index.html"><img class="logo" src="./image/logo.png" alt=""></a></div>
         <nav>
             <ul>
                 <li><a href="/" class="active">Home</a></li>
